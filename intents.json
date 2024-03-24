@@ -1,0 +1,510 @@
+[
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?",
+        "good day to you too"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure","You're Welcome! have a great day ahead"]
+    },
+    {
+      "tag": "government_private",
+      "patterns": [
+        "Is ADTU University a government or private university?",
+        "Ownership of ADTU University",
+        "Is this university a private university?",
+        "is ADTU a private university?"
+      ],
+      "responses": [
+        "ADTU University is a private university that is recognized by the government and accredited by the appropriate regulatory bodies.",
+        "Yes, ADTU is a fully private university.",
+        "Yes",
+        "Yes, ADTU University is a private university that is recognized by the government and accredited by the appropriate regulatory bodies."
+
+      ]
+    },
+    {
+      "tag": "university location",
+      "patterns": [
+        "Where is ADTU University located?",
+        "Location of ADTU University",
+        "university location",
+        "where is adtu located?",
+        "Your location?",
+        "where is j block?",
+        "Location"
+      ],
+      "responses": [
+        "ADTU University is located in Panikhati, Guwahati, Assam, India",
+        "It is located in Panikhati, Guwahati, Assam, India",
+        "Panikhati, Guwahati, Assam, India",
+        "Is is in Panikhati, Guwahati, Assam, India",
+        "Near rail line, panikhaiti, Assam",
+        "<a href='/location'>click here</a>",
+        "<a href='/location'>click here</a>"
+
+      ]
+
+    },
+    {
+      "tag": "undergraduate admission requirements",
+      "patterns": [
+        "What are the admission requirements for undergraduate programs?",
+        "Eligibility criteria for undergraduate admission",
+        "How to get admission in undergraduate programs?"
+      ],
+      "responses": [
+        "The admission requirements for undergraduate programs at ADTU University may vary depending on the specific program. Generally, applicants are required to have completed high school education or an equivalent qualification. They may need to submit their academic transcripts, and other relevant documents. Please click to <a href='https://adtu.in/programme'>this section</a> for more.",
+        "Generally, applicants are required to have completed high school education or an equivalent qualification. They may need to submit their academic transcripts, and other relevant documents. Please click to <a href='https://adtu.in/programme'>this section</a> for more.",
+        "Please click to <a href='https://adtu.in/programme'>this section</a> for your query."
+      ]
+    },
+    {
+      "tag": "international students",
+      "patterns": [
+        "Can international students apply to ADTU University?",
+        "Admission for international students"
+      ],
+      "responses": [
+        "Yes, ADTU University welcomes applications from international students. There may be specific admission requirements and procedures for international students. for more information, you can call on this number:<a href='tel:+91 9127070577'>+91 9127070577</a> or You can mail us on <a href='mailto:admission@adtu.in'>admission@adtu.in</a>. ",
+        "Yes, they can. for more information, you can call on this number:<a href='tel:+91 9127070577'>+91 9127070577</a> or You can mail us on <a href='mailto:admission@adtu.in'>admission@adtu.in</a>. "
+      ]
+    },
+    {
+      "tag": "scholarships",
+      "patterns": [
+        "Does ADTU University provide scholarships?",
+        "Scholarship opportunities at ADTU University",
+        "Financial aid for students"
+      ],
+      "responses": [
+        "Yes, ADTU University offers scholarships to deserving students based on their academic performance, achievements, and financial need. The university has various scholarship programs i.e Common Scholarship Test(CST), and eligible students can <a href='https://adtu.in/scholarship/'> apply here</a>.",
+        "The university has various scholarship programs i.e Common Scholarship Test(CST), and eligible students can <a href='https://adtu.in/scholarship/'> apply here</a>.",
+        "Yes, ADTU University offers scholarships to deserving students based on their academic performance, achievements, and financial need. "
+      ]
+    },
+    {
+      "tag": "program duration",
+      "patterns": [
+        "What is the duration of undergraduate programs at ADTU University?",
+        "How long does it take to complete a bachelor's degree?",
+        "Can you tell me about the program duration?"
+      ],
+      "responses": [
+        "The duration of undergraduate programs at ADTU University varies depending on the specific program and discipline. Generally, undergraduate programs are completed in three to four years.",
+        "Generally, undergraduate programs are completed in three to four years",
+        "The duration of undergraduate programs at ADTU University varies depending on the specific program and discipline."
+      ]
+    },
+    {
+      "tag": "hostel facilities",
+      "patterns": [
+        "Does ADTU University provide hostel facilities?",
+        "Is hostel facility available in the University campus?",
+        "Are there on-campus accommodations available?",
+        "What are the hostel facilities?",
+        "is there hostel inside adtu campus?"
+      ],
+      "responses": [
+        "Yes, ADTU University provides hostel facilities for both male and female students. The hostels are well-equipped with necessary amenities and provide a comfortable living environment.",
+        "Hostel facility is available for both boys and girls inside the campus on a first-come, first-serve basis. The hostellers are provided with comfortable beds, study tables, chairs, clothes stands, cupboards, and access to WiFi.",
+        "YES, there are campus accomadations in our university.",
+        "The hostels are well-equipped with necessary amenities and provide a comfortable living environment. The hostellers are provided with comfortable beds, study tables, chairs, clothes stands, cupboards, and access to WiFi.",
+        "Yes, ADTU University provides hostel facilities for both male and female students."
+      ]
+    },
+    {
+      "tag": "career",
+      "patterns": [
+        "What are the career prospects after completing a degree from ADTU University?",
+        "What job opportunities are available for graduates?"
+
+      ],
+      "responses": [
+        "ADTU University prepares students for a wide range of career opportunities. After completing a degree from ADTU University, students can pursue careers in industries such as engineering, management, information technology, healthcare, education, research, and more. The university also provides career counseling and placement support to help students in their job search.",
+        "After completing a degree from ADTU University, students can pursue careers in industries such as engineering, management, information technology, healthcare, education, research, and more"
+      ]
+    },
+    {
+        "tag": "student_faculty_ratio",
+      "patterns": [
+        "What is the student-to-faculty ratio at ADTU University?",
+        "How many students are there per faculty member?"
+      ],
+      "responses": [
+        "ADTU University maintains a favorable student-to-faculty ratio to ensure personalized attention and effective learning. The exact ratio may vary across programs and departments, but the university strives to provide a conducive learning environment.",
+        "The exact ratio may vary across programs and departments, but the university strives to provide a conducive learning environment."
+      ]
+    },
+    {
+      "tag": "research opportunities",
+      "patterns": [
+        "What are the research opportunities available at ADTU University?",
+        "Can I engage in research projects?",
+        "Tell me about research facilities and centers."
+      ],
+      "responses": [
+        "ADTU University promotes research and innovation among its students and faculty. The university encourages research projects, publishes research papers, and supports interdisciplinary research collaborations. Students can engage in research activities through various research centers and departments dedicated to specific fields of study.",
+        "Yes, Students can engage in research activities through various research centers and departments dedicated to specific fields of study.",
+        "The university encourages research projects, publishes research papers, and supports interdisciplinary research collaborations. Students can engage in research activities through various research centers and departments dedicated to specific fields of study."
+      ]
+    },
+    {
+      "tag": "placement cell",
+      "patterns": [
+        "Does ADTU University have a dedicated placement cell?",
+        "Is there assistance provided for placements?",
+        "does university have placement facility?"
+      ],
+      "responses": [
+        "Yes, ADTU University has a dedicated placement cell that assists students in their placement and career development. The placement cell works closely with industry partners to facilitate campus recruitment drives, organize job fairs, conduct mock interviews, and provide career guidance.",
+        "Yes, ADTU University has a dedicated placement cell that assists students in their placement and career development. You can <a href='https://adtu.in/placements'>see here</a> some of our placements.",
+        "Yes, ADTU University has a dedicated placement cell that assists students in their placement and career development."
+      ]
+    },
+    {
+      "tag": "part time job",
+      "patterns": [
+        "Can I pursue a part time job while studying at ADTU University?",
+        "Is it possible to work part time during studies?",
+        "Are there opportunities for part time employment?"
+      ],
+      "responses": [
+        "Yes, ADTU conducts campus bazaar every friday where students can register their shop and start the business journey as well as earn money.",
+        "Yes, University conducts campus bazaar where students can show their enterpreneur skills and earn money. Conducting Every friday. You can register through provided links.",
+        "Yes, we conduct events called campus bazaar every friday for our students where they can start their business journey."
+      ]
+    },
+    {
+      "tag": "apply online",
+      "patterns": [
+        "How to apply online for admission in Assam down town University (AdtU)?",
+        "How to apply online for admission in AdtU?",
+        "What is the procedure for online admission application at AdtU?",
+        "How can I apply online for admission at Assam down town University?",
+        "how to apply online"
+      ],
+      "responses": [
+        "Student can apply online through university website.<a href='https://www.adtu.in/apply'> click here</a>",
+        "To apply for admission at Assam down town University (AdtU), you can submit your application online through the university's website. For more details, please visit <a href='https://www.adtu.in/apply'>here</a>.",
+        "you can submit your application online through the university's website. For more details, please visit <a href='https://www.adtu.in/apply'>here</a>",
+        "To apply for admission at Assam down town University, you can submit your application online through the university's website. For more details, please visit <a href='https://www.adtu.in/apply'>here</a>",
+        "To apply for admission at Assam down town University (AdtU), please visit <a href='https://www.adtu.in/apply'>here</a>"
+
+      ]
+    },
+    {
+      "tag": "education system",
+      "patterns": [
+        "What is the system of education followed at AdtU?",
+        "How is the education system structured at AdtU?"
+      ],
+      "responses": [
+        "AdtU follows semester system. Students are required to maintain minimum SGPA (Semester Grade Point Average) & CGPA (Cumulative Grade Point average) to get promoted to the next semester and qualify for Degree/Diploma.",
+        "At AdtU, the education system is based on a semester system. Students progress to the next semester and qualify for a degree or diploma by maintaining a minimum SGPA (Semester Grade Point Average) and CGPA (Cumulative Grade Point Average)."
+      ]
+    },
+    {
+      "tag": "transport facility",
+      "patterns": [
+        "Is transport facility available in the University?",
+        "Does AdtU provide transport service?",
+        "Are there buses or transportation options at AdtU?"
+      ],
+      "responses": [
+        "Yes, transport facility is available within the university campus for the convenience of students and staff.",
+        "Yes, transport facility is available within the university campus",
+        "Yes, There are the options of buses."
+      ]
+
+    },
+    {
+      "tag": "attendance requirement",
+      "patterns": [
+        "What is the minimum requirement of attendance to be eligible for appearing in the End semester Examination?",
+        "How much attendance is needed for End semester Examination?",
+        "Is there any attendance requirement for appearing in the End semester Examination?",
+        "is there any attendance criteria ?"
+      ],
+      "responses": [
+        "To be eligible for appearing in the End semester Examination, students are required to maintain a minimum of 75% attendance.",
+        "A minimum of 75% attendance is required to appear in the examinations. Attendance of a student is calculated from the date of commencement of classes.",
+        "Yes, A minimum of 75% attendance is required to appear in the examinations.",
+        "A minimum of 75% attendance is required to appear in the examinations."
+      ]
+    },
+    {
+      "tag": "official communication language",
+      "patterns": [
+        "Which language should be used for official communication?",
+        "What language is used for official communication?",
+        "Is there a specific language for official communication?"
+      ],
+      "responses": [
+        "For any official communication, students are required to communicate in the English language.",
+        "English",
+        "yes,students are required to communicate in the English language. "
+      ]
+    },
+
+    {
+      "tag": "sports facilities",
+      "patterns": [
+        "Are there any sports facilities available on campus?",
+        "Does ADTU University have sports facilities for students?"
+      ],
+      "responses": [
+        "Yes, ADTU University has well-equipped sports facilities.",
+        "Yes, University conducts Sport week, Cricket Tournaments and many more.."
+      ]
+    },
+    {
+      "tag": "phd",
+      "patterns": [
+        "Can I pursue a PhD program at ADTU University?",
+        "Does ADTU University offer Ph.D. programs?",
+        "Are there doctoral programs available at ADTU University?",
+        "Does ADTU University offer phd programs?"
+      ],
+      "responses": [
+        "Yes, ADTU University offers Ph.D. programs in various disciplines. For more details, please visit <a href='https://adtu.in/programme/doctorate-of-philosophy.html'>here</a>. ",
+        "Yes, ADTU University offers Ph.D. programs in various disciplines. please visit <a href='https://adtu.in/programme/doctorate-of-philosophy.html'>here</a> for more details.",
+        "YES, please visit <a href='https://adtu.in/programme/doctorate-of-philosophy.html'>here</a>",
+        "YES, University offer PHD program. For more details, please visit <a href='https://adtu.in/programme/doctorate-of-philosophy.html'>here</a>"
+      ]
+    },
+    {
+      "tag": "fee payment",
+      "patterns": [
+        "How can I pay the tuition fees?",
+        "What are the options for paying tuition fees at ADTU University?",
+        "What are the accepted methods of payment for tuition fees?"
+      ],
+      "responses": [
+        "ADTU University provides various payment options for tuition fees, including online payment and bank transfer.",
+        "payment options for tuition fees, including online payment and bank transfer.",
+        "Cash, online payment(Including UPI) and bank transfer"
+
+      ]
+    },
+    {
+      "tag": "career counseling",
+      "patterns": [
+        "Is there a career counseling service available for students?",
+        "Does ADTU University provide career guidance for students?"
+      ],
+      "responses": [
+        "Yes, ADTU University provides career counseling services to guide students in their career choices.",
+        "Yes, ADTU University provides career counseling services."
+      ]
+    },
+    {
+      "tag": "MBA",
+      "patterns": [
+        "What are the admission requirements for the MBA program?",
+        "Can you provide me the admission requirements for the MBA program at ADTU University?",
+        "What are the eligibility criteria for the MBA program at ADTU University?",
+        "Mba"
+      ],
+      "responses": [
+        "The admission requirements for the MBA program at ADTU University can be found on our website.For more details, please visit <a href='https://adtu.in/programme/master-of-business-administration.html'>here</a>. ",
+        "The admission requirements for the MBA program at ADTU University can be found on our official website. please visit <a href='https://adtu.in/programme/master-of-business-administration.html'>here</a>. , to get info about your query",
+        "please visit <a href='https://adtu.in/programme/master-of-business-administration.html'>here</a>.",
+        "We provide MBA courses in our University.The admission requirements for the MBA program at ADTU University can be found on our official website. please visit <a href='https://adtu.in/programme/master-of-business-administration.html'>here</a>. , to get info about your query"
+      ]
+    },
+    {
+      "tag": "canteen facility",
+      "patterns": [
+        "Is there a canteen or cafeteria on campus?",
+        "Does ADTU University have a canteen?",
+        "Are there food facilities available at ADTU University?"
+      ],
+      "responses": [
+        "Yes, ADTU University has a canteen where students can enjoy a variety of food options.",
+        "Yes, University has a canteen where students can enjoy a variety of food options.",
+        "Yes, students can enjoy a variety of food options there."
+      ]
+    },
+    {
+      "tag": "admission office",
+      "patterns": [
+        "How can I contact the admission office of ADTU University?",
+        "What is the contact information for the admission office of ADTU University?",
+        "Where can I find the contact details of the admission office?"
+      ],
+      "responses": [
+        "you can call on this number:<a href='tel:+91 9864137777'>+91 9864137777</a> or You can mail us on <a href='admission@adtu.in'>admission@adtu.in</a>.",
+        "number:<a href='tel:+91 9864137777'>+91 9864137777</a> or You can mail us on <a href='admission@adtu.in'>admission@adtu.in</a>.",
+        "you can find on our official website,or click here: number:<a href='tel:+91 9864137777'>+91 9864137777</a> or You can mail us on <a href='admission@adtu.in'>admission@adtu.in</a>."
+      ]
+    },
+    {
+      "tag": "academic programs",
+      "patterns": [
+        "What are the different academic programs offered at ADTU University?",
+        "List of academic programs at ADTU University",
+        "What courses does ADTU University offer?",
+        "Degree program",
+        "degree courses",
+        "master degree courses"
+      ],
+      "responses": [
+        "ADTU University offers a wide range of academic programs, including undergraduate, postgraduate, and diploma courses in various disciplines.For more details, please visit <a href='https://adtu.in/programme'>here</a>.",
+        "Many undergraduate, postgraduate, and diploma courses in various disciplines.For more details, please visit <a href='https://adtu.in/programme'>here</a>.",
+        "many courses like BTECH, BBA, Hotel management etc.For more details, please visit <a href='https://adtu.in/programme'>here</a>.",
+        "ADTU University offers a wide range of degree programs.For more details, please visit <a href='https://adtu.in/programme'>here</a>.",
+        "ADTU University offers a wide range of degree courses.For more details, please visit <a href='https://adtu.in/programme'>here</a>.",
+        "ADTU University offers a wide range of master-degree programs.For more details, please visit <a href='https://adtu.in/programme'>here</a>."
+      ]
+
+    },
+    {
+      "tag": "educational loan",
+      "patterns": [
+        "Can I apply for an educational loan through ADTU University?",
+        "Is there any provision for educational loans at ADTU University?",
+        "Can ADTU University assist with educational loan applications?"
+      ],
+      "responses": [
+        "ADTU University can provide the necessary documents and support for applying for an educational loan, but the loan itself is obtained through a bank or financial institution. They can guide you on the loan application process and provide any required documentation from the university.",
+        "Yes, University can provide the necessary documents and support for applying for an educational loan",
+        "University can provide the necessary documents and support for applying for an educational loan. They can guide you on the loan application process and provide any required documentation from the university."
+      ]
+    },
+    {
+      "tag": "computer science",
+      "patterns": [
+        "What is the eligibility criteria for the Computer Science program at ADTU University?",
+        "What are the requirements for the Computer Science program at ADTU University?",
+        "What qualifications are needed for the Computer Science program at ADTU University?",
+        "i want know about eligibility of computer science",
+        "i want know about eligibility criteria of computer science"
+      ],
+      "responses": [
+        "The eligibility criteria for the Computer Science program at ADTU University typically include completing 10+2 or equivalent with Physics, Chemistry, and Mathematics as core subjects.",
+        "The eligibility criteria for the Computer Science program at ADTU University typically include completing 10+2 or equivalent with Physics, Chemistry, and Mathematics as core subjects.",
+        "The eligibility criteria for the Computer Science program at ADTU University typically include completing 10+2 or equivalent with Physics, Chemistry, and Mathematics as core subjects.",
+        "The eligibility criteria for the Computer Science program at ADTU University typically include completing 10+2 or equivalent with Physics, Chemistry, and Mathematics as core subjects.",
+        "The eligibility criteria for the Computer Science program at ADTU University typically include completing 10+2 or equivalent with Physics, Chemistry, and Mathematics as core subjects."
+      ]
+    },
+    {
+      "tag": "computer science diploma",
+      "patterns": [
+        "Can I apply for the Computer Science program if I have a diploma in computer science?",
+        "Is a diploma in computer science acceptable for the Computer Science program?",
+        "Can I get admission to the Computer Science program with a computer science diploma?"
+      ],
+      "responses": [
+        "Yes, candidates with a diploma in computer science is eligible for lateral entry admission to the Computer Science program at ADTU University. Please refer to the university's website for more information.",
+        "Yes, candidates with a diploma in computer science is eligible for lateral entry admission to the Computer Science program at ADTU University.",
+        "Yes, candidates with a diploma in computer science is eligible for lateral entry admission to the Computer Science program at this University. Please refer to the university's website for more information."
+      ]
+    },
+    {
+      "tag": "computer science programming languages",
+      "patterns": [
+        "What programming languages are taught in the Computer Science program at ADTU University?",
+        "Which programming languages are included in the Computer Science program?",
+        "Do I learn specific programming languages in the Computer Science program?"
+      ],
+      "responses": [
+        "The Computer Science program at ADTU University covers various programming languages, including Java, C, Python, and more.",
+        "programming languages, including Java, C, Python, and more.",
+        "yes, programming languages, including Java, C, Python, and more."
+      ]
+    },
+    {
+      "tag": "Mba Specialization",
+      "patterns": [
+        "does adtu provide mba specialization courses?",
+        "MBA Specialization Courses in ADTU",
+        "is there mba specialisation course in adtu?"
+
+      ],
+      "responses": [
+        "yes, Adtu provides MBA courses with specialisation. The duration of the MBA program at ADTU University is two years.For more details, please visit <a href='https://adtu.in/programme/master-of-business-administration-on-industry-integrated.html'>here</a>.",
+        "Adtu provides MBA courses with specialisation.For more details, please visit <a href='https://adtu.in/programme/master-of-business-administration-on-industry-integrated.html'>here</a>.",
+        "Yes, Adtu provides MBA courses with specialisation. The duration of the MBA program at ADTU University is two years.For more details, please visit <a href='https://adtu.in/programme/master-of-business-administration-on-industry-integrated.html'>here</a>."
+
+      ]
+    },
+    {
+      "tag": "computer_science_specialization",
+      "patterns": [
+        "What are the specialization options within the Computer Science program at ADTU University?",
+        "Can I specialize in a specific area in the Computer Science program?"
+      ],
+      "responses": [
+        "ADTU University offers specializations in Computer Science, such as Artificial Intelligence, Data Science, Software Engineering, Cybersecurity, etc. Please refer to the university's website for the complete list of specializations.",
+        "Yes, such as Artificial Intelligence, Data Science, Software Engineering, Cybersecurity, etc."
+      ]
+    },
+    {
+      "tag": "Companies",
+      "patterns": [
+        "Which companies visit ADTU University for placements?",
+        "Which companies visit university for placements?"
+      ],
+      "responses": [
+        "ADTU University has a wide range of companies that visit for placements, including both national and international organizations like Vodafone, Hexaware, ADP etc. The list of companies may vary each year. For more information,please visit <a href='https://adtu.in/recruiters'>here</a> .",
+        "University has a wide range of companies that visit for placements, including both national and international organizations like Vodafone, Hexaware, ADP etc. The list of companies may vary each year. For more information,please visit <a href='https://adtu.in/recruiters'>here</a> ."
+      ]
+    },
+    {
+      "tag": "placement-record",
+      "patterns": [
+        "What is the placement record of ADTU University",
+        "What is the placement record for the BTech program?"
+      ],
+      "responses": [
+        "ADTU University has a strong placement record, with upto 99 percentage of students being placed in reputed companies and organizations. The exact placement statistics may vary each year.",
+        "ADTU University has a strong placement record, with upto 99 percentage of students being placed in reputed companies. For Btech, Core MNC's like Vodafone, Cisco, etc hire Students Every Year."
+      ]
+    },
+  {
+    "tag": "campus-facilities",
+      "patterns": [
+        "Tell me more about the campus facilities."
+      ],
+      "responses": [
+        "ADTU provide all the facilities including hostel, transport, great canteens, smart classes and many more.."
+        ]
+  },
+      {
+      "tag": "scholarships for international students",
+      "patterns": [
+        "Are there any scholarships available for international students?",
+        "Do international students have access to scholarships at ADTU University?"
+      ],
+      "responses": [
+        "Yes, ADTU University offers scholarships for international students. For more details, please visit <a href='https://www.adtu.in/scholarship/'>here</a>.",
+        "Yes, University offers scholarships for international students also. For more details, please visit <a href='https://www.adtu.in/scholarship/'>here</a>"
+      ]
+  }
+
+]

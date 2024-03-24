@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chatbot</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('static/images/adtu.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            width: 100%;
+            height: 100%;
+        }
+
+        .chat-window {
+            display: block;
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            width: 450px;
+            height: 500px;
+            background-color: rgba(230, 214, 40, 0.874);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            
+
+        }
+
+        .chat-header {
+            background-color: #162717;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 18px;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        #close-button {
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .chat-body {
+            overflow-y: auto;
+            padding: 10px;
+            height: calc(100% - 130px);
+
+        }
+
+        .message-container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .chat-footer {
+            padding: 10px;
+            display: flex;
+        }
+
+        .main{
+            overflow-y: scroll; /* Changed to scroll */
+            padding: 10px;
+            height: calc(100% - 130px);
+        }
+
+
+
+        .img {
+            display: flex;
+            /* margin-left: 90px; */
+            padding-top: 30px;
+            padding-left: 80px;
+            
+            
+        }
+
+        .block {
+            display: flex;
+            margin-bottom: 80px;
+            margin-right: 50px;
+            
+        }
+
+        .block2 {
+            display: flex;
+            margin-bottom: 80px;
+        }
+
+        .block3 {
+            display: flex;
+            margin-bottom: 80px;
+        }
+        .block4 {
+            display: flex;
+            margin-bottom: 80px;
+        }
+
+        .location-list {
+            display: none;
+            margin-left: 10px;
+        }
+
+        .location-list2 {
+            display: none;
+            margin-left: 10px;
+        }
+
+        .location-list3 {
+            display: none;
+            margin-left: 10px;
+        }
+        .location-list4 {
+            display: none;
+            margin-left: 10px;
+        }
+
+        .ablock {
+            margin-top: 28px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-style: solid;
+            border-width: 3px;
+            
+        }
+
+        .sub-location-list {
+            margin-left: 8px;
+
+        }
+
+        .sub-location-list li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chat-window" id="chat-window">
+        <div class="chat-header">
+            <img src="{{ url_for('static', filename='images/icon.png') }}" alt="icon" class="logo">
+            <h1>Our Locations</h1>
+            <button id="close-button">&times;</button>
+        </div>
+        <div class="main">
+            <div class="ablock">
+                <div class="block">
+                    <div>
+                        <h2>A Block</h2>
+                        <div class="location-list" id="a-block-locations">
+                            <ul class="sub-location-list">
+                                <li>Admission Office</li>
+                                <li>Acount Department</li>
+                                <li>Training and development</li>
+                                <li>Grievence Cell</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="img">
+                        <a href="https://goo.gl/maps/x5b7zSxnf4qWe2yz9" target="_blank" >
+                            <img width="170px" src="{{ url_for('static', filename='images/ablock.jpg') }}" alt="" srcset="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ablock">
+                <div class="block2">
+                    <div>
+                        <h2>B Block</h2>
+                        <div class="location-list2" id="b-block-locations">
+                            <ul class="sub-location-list">
+                                <li>Jironee </li>
+                                <li>Seminar Hall</li>
+                                <li>Departmental store</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="img">
+                        <a href="https://goo.gl/maps/sg6wD1Ch2MfmNyrh8" target="_blank" >
+                            <img width="170px" src="{{ url_for('static', filename='images/bblock.jpg') }}" alt="" srcset="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ablock">
+                <div class="block3">
+                    <div>
+                        <h2>C Block</h2>
+                        <div class="location-list3" id="c-block-locations">
+                            <ul class="sub-location-list">
+                                <li>IT cell </li>
+                                <li>Placement cell</li>
+                                <li>Seminar Hall</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="img">
+                        <a href="https://goo.gl/maps/sg6wD1Ch2MfmNyrh8" target="_blank" >
+                            <img width="170px" src="{{ url_for('static', filename='images/bblock.jpg') }}" alt="" srcset="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ablock">
+                <div class="block4">
+                    <div>
+                        <h2>J Block</h2>
+                        <div class="location-list4" id="j-block-locations">
+                            <ul class="sub-location-list">
+                                <li>Faculty of Science </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="img">
+                        <a href="https://goo.gl/maps/sg6wD1Ch2MfmNyrh8" target="_blank" >
+                            <img width="170px" src="{{ url_for('static', filename='images/jblock.jpg') }}" alt="" srcset="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.querySelector('.block').addEventListener('click', function () {
+            var locationList = document.getElementById('a-block-locations');
+            if (locationList.style.display === 'none') {
+                locationList.style.display = 'block';
+            } else {
+                locationList.style.display = 'none';
+            }
+        });
+
+        document.querySelector('.block2').addEventListener('click', function () {
+            var locationList = document.getElementById('b-block-locations');
+            if (locationList.style.display === 'none') {
+                locationList.style.display = 'block';
+            } else {
+                locationList.style.display = 'none';
+            }
+        });
+
+        document.querySelector('.block3').addEventListener('click', function () {
+            var locationList = document.getElementById('c-block-locations');
+            if (locationList.style.display === 'none') {
+                locationList.style.display = 'block';
+            } else {
+                locationList.style.display = 'none';
+            }
+        });
+        document.querySelector('.block4').addEventListener('click', function () {
+            var locationList = document.getElementById('j-block-locations');
+            if (locationList.style.display === 'none') {
+                locationList.style.display = 'block';
+            } else {
+                locationList.style.display = 'none';
+            }
+        });
+
+    </script>
+</body>
+
+</html>

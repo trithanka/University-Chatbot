@@ -1,0 +1,54 @@
+<div class="response">
+  <p>{{ response_text|safe }}</p>
+  {% if sentiment %}
+    <p>Sentiment: {{ sentiment.label }} ({{ sentiment.score }})</p>
+  {% endif %}
+  {% if recommended_questions %}
+    <div class="recommended-questions">
+      <p>Here are some related questions you may find helpful:</p>
+      <ul>
+        {% for question in recommended_questions %}
+          <li>
+            <button class="recommended-question" onclick="selectQuestion('{{ question }}')">
+              {{ question }}
+            </button>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+</div>
+<style>
+  .recommended-questions {
+    background-color: #F1F1F1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .recommended-question {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+
+  .recommended-question:hover {
+    background-color: #45a049;
+  }
+</style>
+
+
+<script>
+  function selectQuestion(question) {
+    console.log('Question clicked:', question);
+    var userInput = window.opener.document.getElementById('user-input');
+    userInput.value = question;
+    userInput.focus();
+    window.close();
+    window.opener.sendMessage();
+  }
+</script>

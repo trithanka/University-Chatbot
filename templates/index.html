@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('static/images/adtu.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            width: 100%;
+            height: 100%;
+        }
+
+        .chat-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            color: #fff;
+            text-align: center;
+            line-height: 60px;
+            cursor: pointer;
+        }
+
+        .chat-window {
+            display: none;
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            width: 400px;
+            height: 500px;
+            background-color: rgba(230, 214, 40, 0.874);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .chat-header {
+            background-color: #162717;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 18px;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        #close-button {
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .chat-body {
+            overflow-y: auto;
+            padding: 10px;
+            height: calc(100% - 130px);
+        }
+
+        .message-container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .user-bubble {
+            background-color: #162717;
+            color: #ffffff;
+            border-radius: 10px;
+            padding: 8px 12px;
+            margin-right: 10px;
+        }
+
+        .bot-bubble {
+            background-color: #F1F0F0;
+            color: #000;
+            border-radius: 10px;
+            padding: 8px 12px;
+            margin-left: 10px;
+        }
+
+        .message-sender {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .chat-footer {
+            padding: 10px;
+            display: flex;
+        }
+
+        #user-input {
+            flex-grow: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-right: 10px;
+        }
+
+        #send-button {
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* Additional CSS for recommended questions */
+        .recommended-questions {
+            margin-top: 10px;
+        }
+
+        .recommended-questions ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .recommended-questions li {
+            margin-bottom: 5px;
+        }
+
+        .recommended-question a {
+            color: #007bff;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .recommended-question a:hover {
+            text-decoration: none;
+            color: #ff0000;
+        }
+        .recommended-question-nocolor {
+          color: #007bff;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        .campus{
+            color: white;
+            font-size: small;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="chat-icon" id="chat-icon">&#9993;</div>
+    <div class="chat-window" id="chat-window">
+        <div class="chat-header">
+            <img src="{{ url_for('static', filename='images/icon.png') }}" alt="icon" class="logo">
+            <h1>ADTU Chatbot</h1> <h1> <a class="campus" href="/location">Campus Locations</a> </h1>
+            <button id="close-button">&times;</button>
+        </div>
+        <div class="chat-body" id="chat-body"></div>
+        <div class="chat-footer">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var chatIcon = document.getElementById('chat-icon');
+            var chatWindow = document.getElementById('chat-window');
+            var closeButton = document.getElementById('close-button');
+            var chatBody = document.getElementById('chat-body');
+            var userInput = document.getElementById('user-input');
+            var sendButton = document.getElementById('send-button');
+
+            chatIcon.addEventListener('click', function() {
+                chatIcon.style.display = 'none';
+                chatWindow.style.display = 'block';
+                userInput.focus();
+            });
+
+            closeButton.addEventListener('click', function() {
+                chatIcon.style.display = 'block';
+                chatWindow.style.display = 'none';
+            });
+
+            function appendMessage(sender, message) {
+                var messageContainer = document.createElement('div');
+                var senderText = sender === 'user' ? 'You' : 'Bot';
+                var bubbleClass = sender === 'user' ? 'user-bubble' : 'bot-bubble';
+                messageContainer.className = 'message-container';
+
+                var bubbleElement = document.createElement('div');
+                bubbleElement.className = bubbleClass;
+                bubbleElement.innerHTML = makeUrlClickable(message);
+
+                var senderElement = document.createElement('span');
+                senderElement.className = 'message-sender';
+                senderElement.textContent = senderText + ':';
+
+                messageContainer.appendChild(senderElement);
+                messageContainer.appendChild(bubbleElement);
+
+                chatBody.appendChild(messageContainer);
+                chatBody.scrollTop = chatBody.scrollHeight;
+            }
+
+            function makeUrlClickable(message) {
+                var urlRegex = /<a href="([^"]+)"[^>]+>([^<]+)<\/a>/g;
+                var replacedMessage = message.replace(urlRegex, '<a href="$1" class="recommended-question-nocolor" target="_blank">$2</a>');
+                return replacedMessage;
+            }
+
+            function handleRecommendedQuestionClick(event) {
+                var selectedQuestion = event.target.textContent;
+                userInput.value = selectedQuestion;
+                sendMessage();
+            }
+
+            chatBody.addEventListener('click', function(event) {
+                if (event.target.classList.contains('recommended-question')) {
+                    handleRecommendedQuestionClick(event);
+                }
+            });
+
+            function sendMessage() {
+                var message = userInput.value;
+                userInput.value = '';
+                appendMessage('user', message);
+
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', '/get', true);
+                xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        var response = xhr.responseText;
+                        appendMessage('bot', response);
+                    }
+                };
+                xhr.send('msg=' + encodeURIComponent(message));
+            }
+
+            sendButton.addEventListener('click', function() {
+                sendMessage();
+            });
+
+            userInput.addEventListener('keydown', function(event) {
+                if (event.key === 'Enter') {
+                    event.preventDefault();
+                    sendMessage();
+                }
+            });
+
+            var greetingMessage = "{{ greeting_message|safe }}"; // Added "|safe" to render HTML tags
+            if (greetingMessage) {
+                setTimeout(function() {
+                    appendMessage('bot', greetingMessage);
+                }, 500);
+            }
+        });
+
+    </script>
+</body>
+</html>

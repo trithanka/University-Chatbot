@@ -1,0 +1,51 @@
+[2023-05-26 14:32:57] User: hfehf | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: neutral | Score: 0
+[2023-05-26 14:52:49] User: sdvs | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: neutral | Score: 0
+[2023-05-26 14:52:49] User:  | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: neutral | Score: 0
+[2023-05-26 14:52:53] User:               Is ADTU a private university?             | Bot: Default response | Sentiment: neutral | Score: 0
+[2023-05-26 14:53:35] User:               What are the admission requirements for the MBA program?             | Bot: Default response | Sentiment: neutral | Score: 0
+[2023-05-26 14:53:50] User: bad | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: neutral | Score: 0
+[2023-05-26 14:54:04] User:               How is the education system structured at AdtU?             | Bot: Default response | Sentiment: neutral | Score: 0
+[2023-05-26 15:02:03] User: ds | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: neutral | Score: 0
+[2023-05-26 15:02:04] User:               Are there opportunities for part time employment?             | Bot: Yes, we conduct events called campus bazaar every friday for our students where they can start their business journey. | Sentiment: neutral | Score: 0
+[2023-05-26 15:02:16] User: it is very bad response | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: negative | Score: -1
+[2023-05-26 15:06:04] User: dd | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: neutral | Score: 0
+[2023-05-26 15:06:06] User:               How can I contact the admission office of ADTU University?             | Bot: you can call on this number:<a href='tel:+91 9864137777'>+91 9864137777</a> or You can mail us on <a href='admission@adtu.in'>admission@adtu.in</a>. | Sentiment: neutral | Score: 0
+[2023-05-26 15:06:12] User: very bad | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: negative | Score: -1
+[2023-05-26 15:06:23] User: very good | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: positive | Score: 1
+[2023-05-26 15:18:50] User: cwf | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: neutral | Score: 0
+[2023-05-26 15:18:52] User:               does university have placement facility?             | Bot: Yes, ADTU University has a dedicated placement cell that assists students in their placement and career development. | Sentiment: neutral | Score: 0
+[2023-05-26 15:18:56] User: thank  | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: neutral | Score: 0
+[2023-05-26 15:19:00] User: thanks | Bot: Happy to help! | Sentiment: neutral | Score: 0
+[2023-05-26 15:23:44] User: dd | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: neutral | Score: 0
+[2023-05-26 15:23:46] User:               Are scholarships available?             | Bot: Hey :-) | Sentiment: neutral | Score: 0
+[2023-05-26 15:23:47] User:               How is the education system structured at AdtU?             | Bot: At AdtU, the education system is based on a semester system. Students progress to the next semester and qualify for a degree or diploma by maintaining a minimum SGPA (Semester Grade Point Average) and CGPA (Cumulative Grade Point Average). | Sentiment: neutral | Score: 0
+[2023-05-26 15:23:50] User: bye | Bot: See you later, thanks for visiting | Sentiment: neutral | Score: 0
+[2023-05-26 15:32:58] User: cbc | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: neutral | Score: 0
+[2023-05-26 15:33:05] User:               does university have placement facility?             | Bot: Yes, ADTU University has a dedicated placement cell that assists students in their placement and career development. | Sentiment: neutral | Score: 0
+[2023-05-26 15:33:12] User:               How can I contact the admission office of ADTU University?             | Bot: you can call on this number:<a href='tel:+91 9864137777'>+91 9864137777</a> or You can mail us on <a href='admission@adtu.in'>admission@adtu.in</a>. | Sentiment: neutral | Score: 0
+[2023-05-26 15:33:18] User: thank you | Bot: Any time! | Sentiment: neutral | Score: 0
+[2023-05-26 15:33:47] User: cdvb | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: neutral | Score: 0
+[2023-05-26 15:33:49] User:               does university have placement facility?             | Bot: Yes, ADTU University has a dedicated placement cell that assists students in their placement and career development. | Sentiment: neutral | Score: 0
+[2023-05-26 15:33:54] User:               does university have placement facility?             | Bot: Yes, ADTU University has a dedicated placement cell that assists students in their placement and career development. | Sentiment: neutral | Score: 0
+[2023-05-26 15:34:03] User: bad | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: negative | Score: -1
+[2023-05-26 15:34:09] User:  | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: neutral | Score: 0
+[2023-06-02 21:20:04] User: love | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: neutral | Score: 0
+[2023-06-02 21:20:06] User:               What programming languages are taught in the Computer Science program at ADTU University?             | Bot: The Computer Science program at ADTU University covers various programming languages, including Java, C, Python, and more. | Sentiment: neutral | Score: 0
+[2023-06-02 21:20:08] User:               Are there opportunities for part time employment?             | Bot: Yes, we conduct events called campus bazaar every friday for our students where they can start their business journey. | Sentiment: neutral | Score: 0
+[2023-06-02 21:21:54] User: mba | Bot: We provide MBA courses in our University.The admission requirements for the MBA program at ADTU University can be found on our official website. please visit <a href='https://adtu.in/programme/master-of-business-administration.html'>here</a>. , to get info about your query | Sentiment: neutral | Score: 0
+[2023-06-02 21:22:24] User: computer science | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: neutral | Score: 0
+[2023-06-02 21:22:32] User:               What is the placement record of ADTU University             | Bot: ADTU University has a strong placement record, with upto 99 percentage of students being placed in reputed companies and organizations. The exact placement statistics may vary each year. | Sentiment: neutral | Score: 0
+[2023-06-02 21:22:43] User: thank you | Bot: Any time! | Sentiment: neutral | Score: 0
+[2023-06-02 21:22:50] User:               How can I contact the admission office of ADTU University?             | Bot: you can call on this number:<a href='tel:+91 9864137777'>+91 9864137777</a> or You can mail us on <a href='admission@adtu.in'>admission@adtu.in</a>. | Sentiment: neutral | Score: 0
+[2023-06-02 21:22:58] User:               How to get admission in undergraduate programs?             | Bot: Please click to <a href='https://adtu.in/programme'>this section</a> for your query. | Sentiment: neutral | Score: 0
+[2023-06-02 21:23:02] User:               What are the hostel facilities?             | Bot: The hostels are well-equipped with necessary amenities and provide a comfortable living environment. The hostellers are provided with comfortable beds, study tables, chairs, clothes stands, cupboards, and access to WiFi. | Sentiment: neutral | Score: 0
+[2023-06-02 21:23:31] User: the chatbot is bad | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: negative | Score: -1
+[2023-06-02 21:24:13] User: you are good | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: positive | Score: 1
+[2023-06-02 21:26:11] User: fee | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: neutral | Score: 0
+[2023-06-03 12:33:36] User: can you get a gf from downtown? | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: neutral | Score: 0
+[2023-06-03 12:33:49] User:               Where is ADTU University located?             | Bot: ADTU University is located in Panikhati, Guwahati, Assam, India | Sentiment: neutral | Score: 0
+[2023-06-03 12:34:04] User: where is j block? | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: neutral | Score: 0
+[2023-06-03 12:40:09] User: sac | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: neutral | Score: 0
+[2023-06-03 12:40:12] User: location | Bot: <a href='/location'>click here</a> | Sentiment: neutral | Score: 0
+[2023-06-03 12:40:36] User: bcdskc | Bot: I'm sorry, but I couldn't understand your request. Could you please rephrase? | Sentiment: neutral | Score: 0
+[2023-06-03 12:40:42] User: location | Bot: <a href='/location'>click here</a> | Sentiment: neutral | Score: 0
